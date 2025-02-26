@@ -7,19 +7,17 @@ As global energy demand rises, the transition to renewable energy is crucial to 
 - How does renewable energy adoption correlate with GDP?
 - Which countries lead in renewable energy, and why?
 - How have policies shaped Germany’s progress?
-- Is 100% renewable energy a realistic goal?
 
 ## **2. Objectives**
-✅ Analyze global renewable energy trends (1965–2024)
-✅ Compare renewable energy adoption to GDP levels
-✅ Identify leading and lagging countries
-✅ Highlight Germany’s progress and policy impact
-✅ Create an engaging Tableau dashboard for visualization
+- Analyze global renewable energy trends (1965–2024)
+- Compare renewable energy adoption to GDP levels
+- Identify leading and lagging countries
+- Highlight Germany’s progress and policy impact
 
 ## **3. Data Sources**
-- **Kaggle Renewable Energy Dataset (1965–2022)** – Historical trends
-- **API Data (2023–2024)** – Latest renewable energy updates
-- **World Bank GDP Data** – Economic indicators
+- **[Kaggle Renewable Energy Dataset (1965–2022)](https://www.kaggle.com/datasets/belayethossainds/renewable-energy-world-wide-19652022/data)** – Historical trends
+- **[Ember-Energy FastAPI (2000–2024)](https://ember-energy.org/data/api/)** – Latest renewable energy updates
+- **[World Bank GDP Data](https://data.worldbank.org/)** – Economic indicators
 - **Policy Reports (IEA, IRENA, National Agencies)** – Germany’s laws & regulations
 
 ## **4. Methodology & Approach**
