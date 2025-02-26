@@ -21,15 +21,16 @@ As global energy demand rises, the transition to renewable energy is crucial to 
 - **Policy Reports (IEA, IRENA, National Agencies)** – Germany’s laws & regulations
 
 ## **4. Methodology & Approach**
-1️⃣ **Data Collection & Cleaning:** Merge datasets, handle missing values, structure data
-2️⃣ **Exploratory Data Analysis (EDA):** Identify key patterns and trends
-3️⃣ **Visualization in Tableau:** Create interactive dashboards
-4️⃣ **Comparative Policy Analysis:** Evaluate Germany’s policies vs. global leaders
+- **Data Collection & Cleaning:** Merge datasets, handle missing values, structure data
+- **Exploratory Data Analysis (EDA):** Identify key patterns and trends
+- **Visualization in Tableau:** Create interactive dashboards
+- **Comparative Policy Analysis:** Evaluate Germany’s policies vs. global leaders
+- **Bonus**: Machine Learning PV Forecasting
 
 ## **5. Expected Deliverables**
-📌 **Final Report & Insights:** Analysis of renewable energy trends, economic impact & policies
-📌 **Tableau Dashboard:** Interactive visuals comparing global progress & Germany’s role
-📌 **GitHub Repository:** Code, data sources, and documentation
-📌 **Presentation:** A compelling 10–15 min storytelling-driven overview of key findings
+- **Final Report & Insights:** Analysis of renewable energy trends, economic impact & policies
+- **Tableau Dashboard:** Interactive visuals comparing global progress & Germany’s role
+- **GitHub Repository:** Code, data sources, and documentation
+- **Presentation:** A compelling 10–15 min storytelling-driven overview of key findings
 
-🚀 **Goal:** Provide a structured and visually engaging analysis of renewable energy adoption, highlighting its feasibility and impact on economies worldwide.
+**Goal:** Provide a structured and visually engaging analysis of renewable energy adoption, highlighting its feasibility and impact on economies worldwide.
