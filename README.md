@@ -1,1 +1,37 @@
-# wattsup
+# **"Watt" is going on? A global look at Renewable Energy**
+
+## **1. Business Case**
+As global energy demand rises, the transition to renewable energy is crucial to combat climate change. However, adoption rates vary across countries due to economic factors, policies, and infrastructure. Germany, a leader in energy transition, has implemented various policies, yet faces challenges. 
+
+### **Key Questions:**
+- How does renewable energy adoption correlate with GDP?
+- Which countries lead in renewable energy, and why?
+- How have policies shaped Germany’s progress?
+- Is 100% renewable energy a realistic goal?
+
+## **2. Objectives**
+✅ Analyze global renewable energy trends (1965–2024)
+✅ Compare renewable energy adoption to GDP levels
+✅ Identify leading and lagging countries
+✅ Highlight Germany’s progress and policy impact
+✅ Create an engaging Tableau dashboard for visualization
+
+## **3. Data Sources**
+- **Kaggle Renewable Energy Dataset (1965–2022)** – Historical trends
+- **API Data (2023–2024)** – Latest renewable energy updates
+- **World Bank GDP Data** – Economic indicators
+- **Policy Reports (IEA, IRENA, National Agencies)** – Germany’s laws & regulations
+
+## **4. Methodology & Approach**
+1️⃣ **Data Collection & Cleaning:** Merge datasets, handle missing values, structure data
+2️⃣ **Exploratory Data Analysis (EDA):** Identify key patterns and trends
+3️⃣ **Visualization in Tableau:** Create interactive dashboards
+4️⃣ **Comparative Policy Analysis:** Evaluate Germany’s policies vs. global leaders
+
+## **5. Expected Deliverables**
+📌 **Final Report & Insights:** Analysis of renewable energy trends, economic impact & policies
+📌 **Tableau Dashboard:** Interactive visuals comparing global progress & Germany’s role
+📌 **GitHub Repository:** Code, data sources, and documentation
+📌 **Presentation:** A compelling 10–15 min storytelling-driven overview of key findings
+
+🚀 **Goal:** Provide a structured and visually engaging analysis of renewable energy adoption, highlighting its feasibility and impact on economies worldwide.
