@@ -75,6 +75,21 @@ def ember_reshape_data(df):
 
     return df_final
 
+def wb_get_data(indicator_dict, countries):
+    dfs = []
+    for column_name, api_indicator in indicator_dict.items():
+        df = wb.data.DataFrame(api_indicator, countries, range(1965, 2023))
+        df_stacked = df.stack().reset_index()
+        df_stacked.columns = ['iso_code', 'year', column_name]
+        df_stacked['year'] = df_stacked['year'].str.replace('YR', '')
+        dfs.append(df_stacked)
+
+    df_final = dfs[0]
+    for df in dfs[1:]:
+        df_final = df_final.merge(df, on=['iso_code', 'year'], how='outer')
+        
+    return df_final
+
 def save_json(data, output_json_file):
     """Save data to a JSON file."""
     with open(output_json_file, 'w') as json_file:
