@@ -20,7 +20,7 @@ def ember_fetch_data(ep, countries, key, base_url):
 
 def ember_filter_data(df):
     """Filter for years 2023 and 2024, and select relevant energy sources."""
-    df_filtered = df[df['date'].isin(['2023', '2024'])]
+    df_filtered = df[df['date'].isin(['2022', '2023', '2024'])]
     desired_series = ['Wind', 'Hydro', 'Solar', 'Bioenergy', 'Other renewables']
     return df_filtered[df_filtered['series'].isin(desired_series)]
 
