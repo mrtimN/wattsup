@@ -33,3 +33,6 @@ As global energy demand rises, the transition to renewable energy is crucial to 
 - **Bonus**: Machine Learning PV Forecasting
 
 **Goal:** Provide a structured and visually engaging analysis of renewable energy adoption, highlighting its feasibility and impact on economies worldwide.
+
+**Citation**
+- Hannah Ritchie, Pablo Rosado and Max Roser (2023) - “Energy” Published online at OurWorldinData.org. Retrieved from: 'https://ourworldindata.org/energy' [Online Resource]
