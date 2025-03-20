@@ -3,14 +3,29 @@ import pandas as pd
 import requests
 import wbgapi as wb
 
+def preprocess_df(df, rename_dict):
+    """Umbenennen der Spalten und Entfernen unerwünschter Einträge"""
+    df = df.rename(columns=rename_dict)
+    
+    # Welt- und Regions-Daten separat speichern
+    df_world = df.loc[df['iso_code'] == 'OWID_WRL']
+    df_regions = df.loc[df['iso_code'].isna()]
+    
+    # Entfernen unerwünschter Einträge
+    df = df.loc[~df['iso_code'].isin(['OWID_KOS', 'OWID_USS'])]
+    df = df.loc[df['iso_code'].notna()]
+    
+    return df, df_world, df_regions
+
 def ember_fetch_data(ep, countries, key, base_url):
     """Fetch data from API for given countries and return as list."""
     all_data = []
     for country in countries:
-        query_url = f'{base_url}/v1/{ep}?Code={country}&is_aggregate_series=false&start_date=2000&api_key={key}'
+        query_url = f'{base_url}/v1/{ep}?Code={country}&is_aggregate_series=false&start_date=2022&api_key={key}'
         response = requests.get(query_url)
 
         if response.status_code == 200:
+            print(query_url)
             response_data = response.json()
             all_data.extend(response_data['data'])  # Store only 'data' part
         else:
@@ -23,6 +38,12 @@ def ember_filter_data(df):
     df_filtered = df[df['date'].isin(['2022', '2023', '2024'])]
     desired_series = ['Wind', 'Hydro', 'Solar', 'Bioenergy', 'Other renewables']
     return df_filtered[df_filtered['series'].isin(desired_series)]
+
+def ember_filter_data_con(df):
+    """Filter for years 2023 and 2024, and select relevant energy sources."""
+    df_filtered = df[df['date'].isin(['2022', '2023', '2024'])]
+    return df_filtered[df_filtered['series'].isin(desired_series)]
+
 
 def ember_aggregate_bioenergy_other_renewables(df):
     """Sum Bioenergy and Other renewables into 'Other renewables'."""
@@ -101,3 +122,9 @@ def load_json(input_json_file):
     with open(input_json_file, 'r') as json_file:
         all_data = json.load(json_file)
     return pd.DataFrame(all_data)
+
+# Ensure all necessary DataFrames exist
+def ensure_dataframes_exist(df_dict, df_names):
+    """Ensure all expected DataFrames exist in the dictionary."""
+    for name in df_names:
+        df_dict.setdefault(name, pd.DataFrame())
